@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Smartphone from "./assets/blank_smartphone_template.png"
+import Smartphone from "./assets/blank_smartphone_template_small.png"
+import Button from "./Button";
 
 function ProjectPage({ title, description, image }) {
   return (
@@ -28,9 +29,12 @@ function ProjectPage({ title, description, image }) {
           <p className="text-lg text-gray-700">{description}</p>
         </div>
       </div>
+      <div className="mt-5">
       <Link to="/">
-        <div>zurück</div>
+
+        <Button backgroundColor="bg-black" fontColor="text-white">zurück</Button>
       </Link>
+      </div>
     </div>
   );
 }
