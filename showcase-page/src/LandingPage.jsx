@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from './data/projects'
+import ContactSection from './ContactSection';
 
 function LandingPage() {
 
@@ -24,6 +25,11 @@ function LandingPage() {
                             React und modernen Webtechnologien bin ich stets auf der Suche
                             nach neuen Herausforderungen.
                         </p>
+
+                        <div className="sticky top-20"> 
+                            <ContactSection></ContactSection>
+                        </div>
+
                     </div>
                 </div>
             </section>
