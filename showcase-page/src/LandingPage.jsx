@@ -13,7 +13,7 @@ function LandingPage() {
                 </h1>
             </section>
 
-            <section className="py-16 px-4">
+            <section className="pt-16 px-4">
                 <div className="flex flex-col md:flex-row justify-center items-center max-w-4xl mx-auto">
                     <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8" />
                     <div className="text-left">
@@ -26,13 +26,13 @@ function LandingPage() {
                             nach neuen Herausforderungen.
                         </p>
 
-                        <div className="sticky top-20"> 
-                            <ContactSection></ContactSection>
-                        </div>
 
                     </div>
                 </div>
             </section>
+            <div className="sticky top-2 mb-20 transform -translate-x-10">
+                <ContactSection></ContactSection>
+            </div>
 
             <section className="bg-gray-100 py-16 px-4">
                 <h2 className="text-3xl font-semibold mb-8">Meine Projekte</h2>
