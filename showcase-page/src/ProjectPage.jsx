@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import Smartphone from "./assets/blank_smartphone_template_small.png"
 import Button from "./Button";
 import ContactSection from "./ContactSection";
+import { DemoLink, RepositoryLink } from "./LinkButtons";
 
-function ProjectPage({ title, description, image }) {
+function ProjectPage({ title, description, image, link, demoLink, repoLink }) {
   return (
     <>
       <div className="top-8 right-[10px] fixed ml-auto z-10">
@@ -30,7 +31,11 @@ function ProjectPage({ title, description, image }) {
 
           {/* Titel und Beschreibung */}
           <div className="w-full md:w-1/2 lg:w-3/4">
-            <h1 className="text-3xl font-bold mb-4">{title}</h1>
+              <h1 className="text-3xl font-bold mb-4">{title}</h1>
+            <div className="my-6 flex space-x-3">
+              <DemoLink link={demoLink} />
+              <RepositoryLink link={repoLink} />
+            </div>
             <p className="text-lg text-gray-700">{description}</p>
           </div>
         </div>

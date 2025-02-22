@@ -42,8 +42,10 @@ function LandingPage() {
                         <ProjectCard
                             key={index}
                             title={project.title}
-                            description={project.description}
+                            description={project.teaser}
                             link={project.link}
+                            repoLink={project.repoLink}
+                            demoLink={project.demoLink}
                             image={project.image}
                         />
                     ))}

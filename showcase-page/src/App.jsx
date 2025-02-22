@@ -28,6 +28,8 @@ function App() {
               title={d.title} 
               description={d.description}
               image={d.image}
+              demoLink={d.demoLink}
+              repoLink={d.repoLink}
             />
           } />
         })}
