@@ -46,7 +46,7 @@ function LandingPage() {
                             link={project.link}
                             repoLink={project.repoLink}
                             demoLink={project.demoLink}
-                            image={project.image}
+                            image={project.teaserImage}
                         />
                     ))}
 

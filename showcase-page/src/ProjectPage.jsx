@@ -5,7 +5,7 @@ import Button from "./Button";
 import ContactSection from "./ContactSection";
 import { DemoLink, RepositoryLink } from "./LinkButtons";
 
-function ProjectPage({ title, description, image, link, demoLink, repoLink }) {
+function ProjectPage({ title, description, image, demoLink, repoLink }) {
   return (
     <>
       <div className="top-8 right-[10px] fixed ml-auto z-10">

@@ -6,7 +6,9 @@ export const projects = [
     link: "project1",
     demoLink: "https://www.swr.de",
     repoLink: "https://www.github.com",
-    image: "https://picsum.photos/id/13/300/250"
+    image: "mazer_project.PNG",
+    // image: "https://picsum.photos/id/13/300/250",
+    teaserImage: "mazer_teaser.PNG"
   },
   { 
     title: "Nonstop Destinations",
