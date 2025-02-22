@@ -7,14 +7,14 @@ import ContactSection from "./ContactSection";
 function ProjectPage({ title, description, image }) {
   return (
     <>
-      <div className="top-0 r-0 fixed ml-auto">
+      <div className="top-8 right-[10px] fixed ml-auto z-10">
         <ContactSection vertical={true}></ContactSection>
       </div>
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-16 py-8">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           {/* Bild */}
-          <div className="flex w-full md:w-1/2 mb-6 md:mb-0 md:mr-8 justify-center relative">
-            <div className="h-[80vh] aspect-[53/100] relative">
+          <div className="flex w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0 md:mr-8 justify-center relative">
+            <div className="sm:h-[65vh] md:h-[80vh] aspect-[53/100] relative">
               <img
                 src={Smartphone}
                 alt={title}
@@ -29,7 +29,7 @@ function ProjectPage({ title, description, image }) {
           </div>
 
           {/* Titel und Beschreibung */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 lg:w-3/4">
             <h1 className="text-3xl font-bold mb-4">{title}</h1>
             <p className="text-lg text-gray-700">{description}</p>
           </div>

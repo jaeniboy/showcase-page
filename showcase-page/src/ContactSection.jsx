@@ -17,18 +17,15 @@ const ContactSection = ({vertical=false}) => {
          :
          "flex bg-black py-2 px-3 rounded-full justify-center space-x-3"
 
-    console.log(orientation)
-
     return (
         <div className="flex">
             <div className="inline-flex flex-col items-center ml-auto">
-                <div className="flex">
+                <div className={vertical ? "flex hidden" : "flex"}>
                     <h2 className="text-lg text-center font-bold mb-2">Contact me!</h2>
                     <div className="text-md ml-2 pt-3">
                         <FaArrowTurnDown />
                     </div>
                 </div>
-                {/* <div className="flex flex-col bg-black py-2 px-3 rounded-full justify-center space-y-3"> */}
                 <div className={orientation}>
                     {contactMethods.map((method) => (
                         <a

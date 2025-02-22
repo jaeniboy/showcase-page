@@ -30,7 +30,7 @@ function LandingPage() {
                     </div>
                 </div>
             </section>
-            <div className="sticky top-2 mb-20 transform -translate-x-10">
+            <div className="sticky top-2 my-10 transform -translate-x-10">
                 <ContactSection></ContactSection>
             </div>
 
