@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { DemoLink, RepositoryLink } from './LinkButtons';
+import { DemoLink, RepositoryLink } from './ExternalLinkButtons';
 
 function ProjectCard({ title, description, link, demoLink, repoLink, image }) {
   return (

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Smartphone from "./assets/blank_smartphone_template_small.png"
 import Button from "./Button";
 import ContactSection from "./ContactSection";
-import { DemoLink, RepositoryLink } from "./LinkButtons";
+import { DemoLink, RepositoryLink } from "./ExternalLinkButtons";
 
 function ProjectPage({ title, description, image, demoLink, repoLink }) {
   return (
@@ -31,7 +31,7 @@ function ProjectPage({ title, description, image, demoLink, repoLink }) {
 
           {/* Titel und Beschreibung */}
           <div className="w-full md:w-1/2 lg:w-3/4">
-              <h1 className="text-3xl font-bold mb-4">{title}</h1>
+            <h1 className="text-3xl font-bold mb-4">{title}</h1>
             <div className="my-6 flex space-x-3">
               <DemoLink link={demoLink} />
               <RepositoryLink link={repoLink} />
