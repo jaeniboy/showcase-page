@@ -4,14 +4,16 @@ import Smartphone from "./assets/blank_smartphone_template_small.png"
 import Button from "./Button";
 import ContactSection from "./ContactSection";
 import { DemoLink, RepositoryLink } from "./ExternalLinkButtons";
+import Header from "./Header"
 
 function ProjectPage({ title, description, image, demoLink, repoLink }) {
   return (
     <>
-      <div className="top-8 right-[10px] fixed ml-auto z-10">
-        <ContactSection vertical={true}></ContactSection>
+      <Header></Header>
+      <div className="top-2 right-[10px] fixed ml-auto z-10">
+        <ContactSection vertical={false}></ContactSection>
       </div>
-      <div className="container mx-auto px-16 py-8">
+      <div className="container mx-auto px-16 py-8 mt-14">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           {/* Bild */}
           <div className="flex w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0 md:mr-8 justify-center relative">

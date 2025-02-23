@@ -2,11 +2,13 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from './data/projects'
 import ContactSection from './ContactSection';
+import Header from './Header';
 
 function LandingPage() {
 
     return (
         <div className="text-center">
+            <Header />
             <section className="h-screen w-full flex justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl px-4">
                     Innovative Webentwicklung für die digitale Zukunft
@@ -18,7 +20,7 @@ function LandingPage() {
                     <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8" />
                     <div className="text-left">
                         <h2 className="text-3xl font-semibold mb-4">Über mich</h2>
-                        <p className="text-lg">
+                        <p className="text-lg font-caveat">
                             Hallo, ich bin Jan Seipel. Als leidenschaftlicher Webentwickler
                             kreiere ich innovative digitale Lösungen, die Nutzer begeistern
                             und Unternehmen voranbringen. Mit 10 Jahren Erfahrung in
@@ -30,7 +32,7 @@ function LandingPage() {
                     </div>
                 </div>
             </section>
-            <div className="sticky top-2 my-10 transform -translate-x-10">
+            <div className="sticky top-2 my-10 transform -translate-x-4 z-20">
                 <ContactSection></ContactSection>
             </div>
 

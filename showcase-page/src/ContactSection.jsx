@@ -17,14 +17,16 @@ const ContactSection = ({vertical=false}) => {
          :
          "flex bg-black py-2 px-3 rounded-full justify-center space-x-3"
 
+    const contactArrow = "->"
+
     return (
         <div className="flex">
-            <div className="inline-flex flex-col items-center ml-auto">
+            <div className="inline-flex flex-row items-center ml-auto">
                 <div className={vertical ? "flex hidden" : "flex"}>
-                    <h2 className="text-lg text-center font-bold mb-2">Contact me!</h2>
-                    <div className="text-md ml-2 pt-3">
+                    <h2 className="font-caveat text-xl text-center font-bold mt-2 mb-2 mr-3 -rotate-2" style={{"font-family": "Caveat"}}>contact me <span className="">{contactArrow}</span></h2>
+                    {/* <div className="text-md ml-2 pt-3">
                         <FaArrowTurnDown />
-                    </div>
+                    </div> */}
                 </div>
                 <div className={orientation}>
                     {contactMethods.map((method) => (
