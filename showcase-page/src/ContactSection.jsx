@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaEnvelope } from 'react-icons/fa';
-import { FaArrowTurnDown } from 'react-icons/fa6';
 import { SiSignal, SiGithub, SiWhatsapp, SiLinkedin } from 'react-icons/si'
 
 const ContactSection = ({vertical=false}) => {
