@@ -25,7 +25,7 @@ const DemoLink = ({ link }) => {
 const ExternalLinkButton = ({ link, color, text, icon: Icon }) => {
 
     const colorClasses = {
-        blue: 'hover:bg-blue-500 text-blue-500 border-blue-500',
+        blue: 'hover:bg-blue-700 text-blue-700 border-blue-700',
         black: 'hover:bg-black text-black border-black',
       }
 

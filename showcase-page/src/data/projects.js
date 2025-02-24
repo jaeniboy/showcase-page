@@ -7,7 +7,8 @@ export const projects = [
     demoLink: "https://jaeniboy.github.io/my-maze-mazer",
     repoLink: "https://www.github.com",
     image: "mazer_project.PNG",
-    teaserImage: "mazer_teaser_2.PNG"
+    teaserImage: "mazer_teaser_2.PNG", 
+    tags: ["lorem","ipsum","dolor","sit","amet"]
   },
   { 
     title: "Nonstop Destinations",
@@ -17,7 +18,8 @@ export const projects = [
     demoLink: "https://jaeniboy.github.io/nonstop-destinations",
     repoLink: "https://www.github.com",
     image: "destinations_project.PNG",
-    teaserImage: "destinations_teaser_3.png" 
+    teaserImage: "destinations_teaser_3.png",
+    tags: ["consetur","sadipscing","elitr","sed","diam"] 
   },
   { 
     title: "Wiki Memo", 
@@ -27,7 +29,8 @@ export const projects = [
     demoLink: "https://jaeniboy.github.io/wiki-memo",
     repoLink: "https://www.github.com",
     image: "memo_project.PNG",
-    teaserImage: "memo_teaser_2.PNG"
+    teaserImage: "memo_teaser_2.PNG",
+    tags: ["nonumy","eirmod","tempor","invidunt","ut","labore"]
   },
   // { 
   //   title: "Projekt 4", 

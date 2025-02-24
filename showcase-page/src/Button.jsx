@@ -7,9 +7,10 @@ const Button = ({ backgroundColor, fontColor, children, onClick }) => {
         px-4 py-2
         ${backgroundColor}
         ${fontColor}
-        rounded-full
-        transition duration-300 ease-in-out
-        hover:opacity-80 hover:shadow-md
+        rounded
+        border-1
+        border-color-black
+        hover:bg-black hover:text-white
         focus:outline-none focus:ring-2 focus:ring-opacity-50
         cursor-pointer
       `}

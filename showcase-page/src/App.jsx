@@ -30,6 +30,7 @@ function App() {
               image={d.image}
               demoLink={d.demoLink}
               repoLink={d.repoLink}
+              tags={d.tags}
             />
           } />
         })}

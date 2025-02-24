@@ -4,9 +4,10 @@ import Smartphone from "./assets/blank_smartphone_template_small.png"
 import Button from "./Button";
 import ContactSection from "./ContactSection";
 import { DemoLink, RepositoryLink } from "./ExternalLinkButtons";
-import Header from "./Header"
+import Header from "./Header";
+import { TagList } from "./Tags";
 
-function ProjectPage({ title, description, image, demoLink, repoLink }) {
+function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
   return (
     <>
       <Header></Header>
@@ -33,19 +34,23 @@ function ProjectPage({ title, description, image, demoLink, repoLink }) {
 
           {/* Titel und Beschreibung */}
           <div className="w-full md:w-1/2 lg:w-3/4">
-            <h1 className="text-3xl font-bold mb-4">{title}</h1>
-            <div className="my-6 flex space-x-3">
-              <DemoLink link={demoLink} />
-              <RepositoryLink link={repoLink} />
+            <div className="my-6 flex flex-wrap justify-between">
+              <h1 className="text-3xl font-bold">{title}</h1>
+              <div className="space-x-3">
+                <DemoLink link={demoLink} />
+                <RepositoryLink link={repoLink} />
+              </div>
             </div>
             <p className="text-lg text-gray-700">{description}</p>
+            <div className="mt-8 flex justify-end">
+              <TagList tags={tags} />
+            </div>
           </div>
         </div>
         <div className="mt-5">
           <Link to="/">
-            <Button backgroundColor="bg-black" fontColor="text-white">zurück</Button>
+            <Button backgroundColor="bg-white" fontColor="text-black">zurück</Button>
           </Link>
-
         </div>
       </div>
     </>
