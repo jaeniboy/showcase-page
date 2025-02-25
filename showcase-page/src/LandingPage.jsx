@@ -11,7 +11,7 @@ function LandingPage() {
         <div className="text-center">
             <Header />
             <section className="h-screen w-full flex justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl px-4 text-dark">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl px-4 text-secondary">
                     Developer by accident
                 </h1>
             </section>
@@ -20,8 +20,8 @@ function LandingPage() {
                 <div className="flex flex-col md:flex-row justify-center items-center max-w-4xl mx-auto">
                     <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8" />
                     <div className="text-left">
-                        <h2 className="text-3xl font-semibold mb-4 text-dark">That's me</h2>
-                        <p className="text-lg font-caveat text-dark">
+                        <h2 className="text-3xl font-semibold mb-4 text-secondary">That's me</h2>
+                        <p className="text-lg text-dark">
                             I'm Jan, a father of two and - thanks to technology-driven jobs and 
                             limited developer capacities - a self-proclaimed "developer by accident." 
                             A huge part of my daily work now consists of Python and JavaScript coding, 
