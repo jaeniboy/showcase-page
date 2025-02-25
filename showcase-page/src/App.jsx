@@ -12,10 +12,6 @@ function NotFound() {
   return <h1>404 - Seite nicht gefunden</h1>;
 }
 
-// function ProjectPage({ title }) {
-//   return <h1>{title}</h1>
-// }
-
 function App() {
   return (
     <Router>

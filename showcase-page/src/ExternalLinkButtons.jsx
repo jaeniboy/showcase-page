@@ -4,7 +4,7 @@ const RepositoryLink = ({ link }) => {
     return (
         <ExternalLinkButton
             link={link}
-            color="black"
+            color="primary"
             text="Repository"
             icon={FaGithub}
         />
@@ -15,7 +15,7 @@ const DemoLink = ({ link }) => {
     return (
         <ExternalLinkButton
             link={link}
-            color="blue"
+            color="secondary"
             text="Live demo!"
             icon={FaExternalLinkAlt}
         />
@@ -25,11 +25,11 @@ const DemoLink = ({ link }) => {
 const ExternalLinkButton = ({ link, color, text, icon: Icon }) => {
 
     const colorClasses = {
-        blue: 'hover:bg-blue-700 text-blue-700 border-blue-700',
-        black: 'hover:bg-black text-black border-black',
+        primary: 'hover:bg-primary text-primary border-primary',
+        secondary: 'hover:bg-secondary text-secondary border-secondary',
       }
 
-    const baseClass = `whitespace-nowrap flex flex-row inline-flex bg-transparent font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded`
+    const baseClass = `whitespace-nowrap flex flex-row inline-flex bg-transparent font-semibold hover:text-bright py-2 px-4 border hover:border-transparent rounded`
     const colorClass = colorClasses[color] || colorClasses.blue
     return (
         <>

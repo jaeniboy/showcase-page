@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {  
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-primary: #000000;
+  --color-secondary: #68d350;
+  --color-accent: #ffcc00;
+  --color-bright: #ffffff;
+  --color-dark: #000000;
+}
+
 :root {
   font-family: Outfit, sans-serif;
 }

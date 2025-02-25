@@ -11,7 +11,7 @@ function LandingPage() {
         <div className="text-center">
             <Header />
             <section className="h-screen w-full flex justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl px-4">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl px-4 text-dark">
                     Developer by accident
                 </h1>
             </section>
@@ -20,8 +20,8 @@ function LandingPage() {
                 <div className="flex flex-col md:flex-row justify-center items-center max-w-4xl mx-auto">
                     <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8" />
                     <div className="text-left">
-                        <h2 className="text-3xl font-semibold mb-4">That's me</h2>
-                        <p className="text-lg font-caveat">
+                        <h2 className="text-3xl font-semibold mb-4 text-dark">That's me</h2>
+                        <p className="text-lg font-caveat text-dark">
                             I'm Jan, a father of two and - thanks to technology-driven jobs and 
                             limited developer capacities - a self-proclaimed "developer by accident." 
                             A huge part of my daily work now consists of Python and JavaScript coding, 
@@ -36,7 +36,7 @@ function LandingPage() {
             </div>
 
             <section className="bg-gray-100 py-16 px-4">
-                <h2 className="text-3xl font-semibold mb-8">My Projects</h2>
+                <h2 className="text-3xl font-semibold mb-8 text-dark">My Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
                     {projects.map((project, index) => (
@@ -54,19 +54,19 @@ function LandingPage() {
             </section>
 
             <section className="py-16 px-4">
-                <h2 className="text-3xl font-semibold mb-8">My Stack</h2>
+                <h2 className="text-3xl font-semibold mb-8 text-dark">My Stack</h2>
                 <TagCloud data={projects}></TagCloud>
 
             </section>
 
             <section className="bg-gray-100 py-16 px-4">
-                <h2 className="text-3xl font-semibold mb-8">Contact</h2>
-                <form className="max-w-lg mx-auto flex flex-col">
+                <h2 className="text-3xl font-semibold mb-8 text-dark">Footer</h2>
+                {/* <form className="max-w-lg mx-auto flex flex-col">
                     <input type="text" placeholder="Name" required className="mb-4 p-2 border border-gray-300 rounded" />
                     <input type="email" placeholder="E-Mail" required className="mb-4 p-2 border border-gray-300 rounded" />
                     <textarea placeholder="Ihre Nachricht" required className="mb-4 p-2 border border-gray-300 rounded h-32"></textarea>
                     <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Senden</button>
-                </form>
+                </form> */}
             </section>
 
 

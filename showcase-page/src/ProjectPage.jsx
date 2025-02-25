@@ -35,13 +35,13 @@ function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
           {/* Titel und Beschreibung */}
           <div className="w-full md:w-1/2 lg:w-3/4">
             <div className="my-6 flex flex-wrap justify-between">
-              <h1 className="text-3xl font-bold">{title}</h1>
+              <h1 className="text-3xl font-bold text-dark">{title}</h1>
               <div className="space-x-3">
                 <DemoLink link={demoLink} />
                 <RepositoryLink link={repoLink} />
               </div>
             </div>
-            <p className="text-lg text-gray-700">{description}</p>
+            <p className="text-lg text-dark">{description}</p>
             <div className="mt-8 flex justify-end">
               <TagList tags={tags} />
             </div>
@@ -49,7 +49,7 @@ function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
         </div>
         <div className="mt-5">
           <Link to="/">
-            <Button backgroundColor="bg-white" fontColor="text-black">zurück</Button>
+            <Button backgroundColor="bg-white" fontColor="text-primary">zurück</Button>
           </Link>
         </div>
       </div>

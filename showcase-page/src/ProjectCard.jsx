@@ -4,9 +4,9 @@ import { DemoLink, RepositoryLink } from './ExternalLinkButtons';
 
 function ProjectCard({ title, description, link, demoLink, repoLink, image }) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md hover:border-blue-500 border-white border-1 box-border">
+    <div className="bg-white p-6 rounded-lg shadow-md hover:border-primary border-white border-1 box-border">
       <Link to={link}>
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <h3 className="text-xl font-semibold mb-2 text-dark">{title}</h3>
         <div className="flex justify-center">
           <img
             src={image}
@@ -16,7 +16,7 @@ function ProjectCard({ title, description, link, demoLink, repoLink, image }) {
             }}
           ></img>
         </div>
-        <p className="my-4">{description}</p>
+        <p className="my-4 text-dark">{description}</p>
       </Link>
       {/* <div className="space-x-3">
         <DemoLink link={demoLink} />
