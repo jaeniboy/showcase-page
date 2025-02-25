@@ -8,7 +8,7 @@ export const projects = [
     repoLink: "https://www.github.com",
     image: "mazer_project.PNG",
     teaserImage: "mazer_teaser_2.PNG", 
-    tags: ["lorem","ipsum","dolor","sit","amet"]
+    tags: ["lorem","ipsum","dolor","sit","amet", "lorem"]
   },
   { 
     title: "Nonstop Destinations",
@@ -19,7 +19,7 @@ export const projects = [
     repoLink: "https://www.github.com",
     image: "destinations_project.PNG",
     teaserImage: "destinations_teaser_3.png",
-    tags: ["consetur","sadipscing","elitr","sed","diam"] 
+    tags: ["consetur","sadipscing","lorem","elitr","sed","diam"] 
   },
   { 
     title: "Wiki Memo", 
@@ -30,15 +30,6 @@ export const projects = [
     repoLink: "https://www.github.com",
     image: "memo_project.PNG",
     teaserImage: "memo_teaser_2.PNG",
-    tags: ["nonumy","eirmod","tempor","invidunt","ut","labore"]
+    tags: ["nonumy","set","tempor","invidunt","set","labore","lorem"]
   },
-  // { 
-  //   title: "Projekt 4", 
-  //   teaser: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
-  //   description: "Kurze Beschreibung des Projekts 2", 
-  //   link: "project4", 
-  //   demoLink: "https://www.swr.de",
-  //   repoLink: "https://www.github.com",
-  //   image: "https://picsum.photos/id/16/300/250" 
-  // },
 ];

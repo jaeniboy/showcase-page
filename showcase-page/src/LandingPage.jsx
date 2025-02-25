@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard';
 import { projects } from './data/projects'
 import ContactSection from './ContactSection';
 import Header from './Header';
+import TagCloud from './TagCloud';
 
 function LandingPage() {
 
@@ -27,8 +28,6 @@ function LandingPage() {
                             React und modernen Webtechnologien bin ich stets auf der Suche
                             nach neuen Herausforderungen.
                         </p>
-
-
                     </div>
                 </div>
             </section>
@@ -51,11 +50,16 @@ function LandingPage() {
                             image={project.teaserImage}
                         />
                     ))}
-
                 </div>
             </section>
 
             <section className="py-16 px-4">
+                <h2 className="text-3xl font-semibold mb-8">Mein Stack</h2>
+                <TagCloud data={projects}></TagCloud>
+
+            </section>
+
+            <section className="bg-gray-100 py-16 px-4">
                 <h2 className="text-3xl font-semibold mb-8">Kontakt</h2>
                 <form className="max-w-lg mx-auto flex flex-col">
                     <input type="text" placeholder="Name" required className="mb-4 p-2 border border-gray-300 rounded" />
@@ -64,6 +68,8 @@ function LandingPage() {
                     <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Senden</button>
                 </form>
             </section>
+
+
         </div>
     );
 

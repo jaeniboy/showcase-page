@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Tag = ({ text }) => {
+const Tag = ({ text, size = 1 }) => {
   return (
-    <span className="inline-block bg-blue-700 rounded-full px-4 py-2 text-sm font-semibold text-white mr-2 mb-2">
+    <span
+      className="inline-block bg-blue-700 rounded-full px-4 py-2 text-sm font-semibold text-white mr-2 mb-2"
+      style={{
+        "font-size": `${size}rem`
+      }}
+    >
       {text}
     </span>
   );
