@@ -12,7 +12,7 @@ function LandingPage() {
             <Header />
             <section className="h-screen w-full flex justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl px-4 text-secondary">
-                    Developer by accident
+                    Jan Seipel - Developer by accident
                 </h1>
             </section>
 

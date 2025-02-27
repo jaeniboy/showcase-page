@@ -23,7 +23,7 @@ const ContactSection = ({vertical=false}) => {
         <div className="flex">
             <div className="inline-flex flex-row items-center ml-auto">
                 <div className={vertical ? "flex hidden" : "flex"}>
-                    <h2 className="font-caveat text-dark text-xl text-center font-bold mt-2 mb-2 mr-3 -rotate-3" >contact me <span className="">{contactArrow}</span></h2>
+                    <h2 className="flex flex-row items-center font-caveat text-dark text-xl text-center font-bold mb-1 mr-3 -rotate-3 leading-none space-x-2" ><div>contact<br/>me</div><div className="">{contactArrow}</div></h2>
                     {/* <h2 className="font-caveat text-dark text-xl text-center font-bold mt-2 mb-2 mr-3 -rotate-3" style={{"font-family": "Caveat"}}>contact me <span className="">{contactArrow}</span></h2> */}
                 </div>
                 <div className={orientation}>
