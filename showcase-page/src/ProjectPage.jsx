@@ -33,9 +33,9 @@ function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
           </div>
 
           {/* Titel und Beschreibung */}
-          <div className="w-full md:w-1/2 lg:w-3/4">
-            <div className="my-6 flex flex-wrap justify-between">
-              <h1 className="text-3xl font-bold text-dark">{title}</h1>
+          <div className="w-full md:w-1/2 lg:w-3/4 mt-6 md:mt-0">
+            <div className="mb-6 flex flex-wrap justify-between">
+              <h1 className="text-3xl font-bold text-dark mb-6 mr-3">{title}</h1>
               <div className="space-x-3">
                 <DemoLink link={demoLink} />
                 <RepositoryLink link={repoLink} />

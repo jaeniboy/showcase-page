@@ -29,7 +29,7 @@ const ExternalLinkButton = ({ link, color, text, icon: Icon }) => {
         secondary: 'hover:bg-secondary text-secondary border-secondary',
       }
 
-    const baseClass = `whitespace-nowrap flex flex-row inline-flex bg-transparent font-semibold hover:text-bright py-2 px-4 border hover:border-transparent rounded`
+    const baseClass = `whitespace-nowrap flex flex-row inline-flex bg-transparent my-1 font-semibold hover:text-bright py-2 px-4 border hover:border-transparent rounded`
     const colorClass = colorClasses[color] || colorClasses.blue
     return (
         <>
