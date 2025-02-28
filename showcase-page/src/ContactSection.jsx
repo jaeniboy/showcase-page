@@ -14,7 +14,7 @@ const ContactSection = ({vertical=false}) => {
     const orientation = vertical ?
          "flex flex-col bg-black py-2 px-3 rounded-full justify-center space-y-3"
          :
-         "flex bg-white border-gray-400 border-1 py-2 px-3 rounded-full justify-center space-x-3"
+         "flex bg-white border-paragraph border-1 py-2 px-3 rounded-full justify-center space-x-3"
         //  "flex bg-black py-2 px-3 rounded-full justify-center space-x-3"
 
     const contactArrow = "->"
@@ -23,7 +23,7 @@ const ContactSection = ({vertical=false}) => {
         <div className="flex">
             <div className="inline-flex flex-row items-center ml-auto">
                 <div className={vertical ? "flex hidden" : "flex"}>
-                    <h2 className="flex flex-row items-center font-caveat text-gray-500 text-xl text-center font-bold mb-1 mr-3 -rotate-3 leading-none space-x-2" ><div>contact<br/>me</div><div className="">{contactArrow}</div></h2>
+                    <h2 className="flex flex-row items-center font-caveat text-paragraph text-xl text-center font-bold mb-1 mr-2 -rotate-3 leading-none space-x-2" ><div>contact<br/>me</div><div className="">{contactArrow}</div></h2>
                     {/* <h2 className="font-caveat text-dark text-xl text-center font-bold mt-2 mb-2 mr-3 -rotate-3" style={{"font-family": "Caveat"}}>contact me <span className="">{contactArrow}</span></h2> */}
                 </div>
                 <div className={orientation}>
@@ -33,7 +33,7 @@ const ContactSection = ({vertical=false}) => {
                             href={method.href}
                             aria-label={method.label}
                             title={method.name}
-                            className="text-2xl text-dark hover:scale-115 transition-transform duration-300"
+                            className="text-2xl text-paragraph hover:scale-115 transition-transform duration-300"
                         >
                             <Icon name={method.name} />
 

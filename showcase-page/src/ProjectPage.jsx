@@ -41,7 +41,7 @@ function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
                 <RepositoryLink link={repoLink} />
               </div>
             </div>
-            <p className="text-lg text-dark">{description}</p>
+            <p className="text-lg text-paragraph">{description}</p>
             <div className="mt-8 flex justify-end">
               <TagList tags={tags} />
             </div>
