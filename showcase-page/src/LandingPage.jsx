@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from './data/projects'
 import ContactSection from './ContactSection';
@@ -10,10 +10,16 @@ function LandingPage() {
     return (
         <div className="text-center">
             <Header />
-            <section className="h-screen w-full flex justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl px-4 text-secondary">
-                    Jan Seipel - Developer by accident
-                </h1>
+            <section
+                className="h-screen w-full flex  flex-col justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]"
+            // style={{"textShadow": "3px 3px 4px #777"}}
+            >
+                <div className="w-full bg-black/20 flex flex-col justify-center items-center p-4">
+                    <h1 className="text-6xl md:text-8xl lg:text-8xl font-bold max-w-4xl px-4 text-white underline decoration-secondary decoration-8">
+                        Developer by accident
+                    </h1>
+                    <h2 className="text-white font-bold text-2xl flex justify-end w-full max-w-3xl px-4">-- Jan Seipel</h2>
+                </div>
             </section>
 
             <section className="pt-16 px-4">
@@ -22,10 +28,10 @@ function LandingPage() {
                     <div className="text-left">
                         <h2 className="text-3xl font-semibold mb-4 text-secondary">That's me</h2>
                         <p className="text-lg text-dark">
-                            I'm Jan, a father of two and - thanks to technology-driven jobs and 
-                            limited developer capacities - a self-proclaimed "developer by accident." 
-                            A huge part of my daily work now consists of Python and JavaScript coding, 
-                            data analysis, APIs, and Git repositories. Check out my private coding 
+                            I'm Jan, a father of two and - thanks to technology-driven jobs and
+                            limited developer capacities - a self-proclaimed "developer by accident."
+                            A huge part of my daily work now consists of Python and JavaScript coding,
+                            data analysis, APIs, and Git repositories. Check out my private coding
                             projects to get an overview of my skills. Feedback is very much appreciated.
                         </p>
                     </div>
@@ -36,7 +42,7 @@ function LandingPage() {
             </div>
 
             <section className="bg-gray-100 py-16 px-4">
-                <h2 className="text-3xl font-semibold mb-8 text-dark">My Projects</h2>
+                <HeadlineSecondary text="My Projekts" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
                     {projects.map((project, index) => (
@@ -54,13 +60,13 @@ function LandingPage() {
             </section>
 
             <section className="py-16 px-4">
-                <h2 className="text-3xl font-semibold mb-8 text-dark">My Stack</h2>
+                <HeadlineSecondary text="My Stack" />
                 <TagCloud data={projects}></TagCloud>
 
             </section>
 
             <section className="bg-gray-100 py-16 px-4">
-                <h2 className="text-3xl font-semibold mb-8 text-dark">Footer</h2>
+                <HeadlineSecondary text="Footer" />
                 {/* <form className="max-w-lg mx-auto flex flex-col">
                     <input type="text" placeholder="Name" required className="mb-4 p-2 border border-gray-300 rounded" />
                     <input type="email" placeholder="E-Mail" required className="mb-4 p-2 border border-gray-300 rounded" />
@@ -73,6 +79,12 @@ function LandingPage() {
         </div>
     );
 
+}
+
+const HeadlineSecondary = ({ text }) => {
+    return (
+        <h2 className="text-3xl font-bold mb-8 text-dark">{text}</h2>
+    )
 }
 
 
