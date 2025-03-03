@@ -5,11 +5,10 @@ import { DemoLink, RepositoryLink } from './ExternalLinkButtons';
 function ProjectCard({ title, description, link, demoLink, repoLink, image }) {
   return (
     <div className="bg-white shadow-md hover:shadow-xl">
-      <div className="w-full h-2 bg-secondary"></div>
-      <div className="p-6 pt-4">
+      <div className="w-full h-1 bg-teal-500"></div>
+      <div className="">
         <Link to={link}>
-          <h3 className="text-xl font-semibold mb-4 text-dark">{title}</h3>
-          <div className="flex justify-center ">
+          <div className="flex justify-center inset-shadow inset-shadow-black">
             <img
               src={image}
               alt="project-image"
@@ -18,7 +17,9 @@ function ProjectCard({ title, description, link, demoLink, repoLink, image }) {
             // }}
             ></img>
           </div>
-          <p className="my-4 text-paragraph">{description}</p>
+              <div className="w-full h-1 bg-teal-500"></div>
+              <h3 className="text-xl font-semibold mt-5 text-dark">{title}</h3>
+          <p className="mb-2 mt-1 text-paragraph">{description}</p>
         </Link>
       </div>
       {/* <div className="space-x-3">

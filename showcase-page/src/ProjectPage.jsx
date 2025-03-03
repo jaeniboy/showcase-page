@@ -11,7 +11,7 @@ function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
   return (
     <>
       <Header></Header>
-      <div className="top-2 right-[10px] fixed ml-auto z-10">
+      <div className="top-0 right-[10px] fixed ml-auto z-10">
         <ContactSection vertical={false}></ContactSection>
       </div>
       <div className="container mx-auto px-16 py-8 mt-14">

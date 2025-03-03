@@ -15,7 +15,7 @@ function LandingPage() {
             // style={{"textShadow": "3px 3px 4px #777"}}
             >
                 <div className="w-full bg-black/20 flex flex-col justify-center items-center p-4">
-                    <h1 className="text-6xl md:text-8xl lg:text-8xl font-bold max-w-4xl px-4 text-white underline decoration-secondary decoration-8">
+                    <h1 className="text-6xl md:text-8xl lg:text-8xl font-bold max-w-4xl px-4 text-white underline decoration-teal-500 decoration-8">
                         Developer by accident
                     </h1>
                     <h2 className="text-white font-bold text-2xl flex justify-end w-full max-w-3xl px-4">-- Jan Seipel</h2>
@@ -24,7 +24,7 @@ function LandingPage() {
 
             <section className="pt-16 px-4">
                 <div className="flex flex-col md:flex-row justify-center items-center max-w-4xl mx-auto">
-                    <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8" />
+                    <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8 border-teal-500 border-5 p-1 inset-shadow-xl" />
                     <div className="text-left">
                         <h2 className="text-3xl font-semibold mb-4 text-primary">That's me</h2>
                         <p className="text-lg text-paragraph">
@@ -37,7 +37,7 @@ function LandingPage() {
                     </div>
                 </div>
             </section>
-            <div className="sticky top-[6px] my-10 transform -translate-x-4 z-20">
+            <div className="sticky top-[0px] my-10 transform -translate-x-4 z-20">
                 <ContactSection></ContactSection>
             </div>
 
