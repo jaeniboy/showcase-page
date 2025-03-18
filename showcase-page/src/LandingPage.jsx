@@ -11,29 +11,29 @@ function LandingPage() {
         <div className="text-center">
             <Header />
             <section
-                className="h-screen w-full flex  flex-col justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]"
+                className="h-screen w-full flex flex-col justify-center items-center bg-cover bg-center bg-[url(https://picsum.photos/seed/picsum/2500/1667)]"
             // style={{"textShadow": "3px 3px 4px #777"}}
             >
-                <div className="w-full bg-black/20 flex flex-col justify-center items-center p-4">
-                    <h1 className="text-6xl md:text-8xl lg:text-8xl font-bold max-w-4xl px-4 text-white underline decoration-teal-500 decoration-8">
-                        Developer by accident
+                <div className="w-full h-screen bg-black/20 flex flex-col justify-center items-center p-4">
+                    <h1 className="tracking-tight drop-shadow-lg text-5xl/18 md:text-8xl lg:text-8xl max-w-4xl px-4 text-white underline decoration-teal-500 decoration-5">
+                    „Developer by accident“
                     </h1>
-                    <h2 className="text-white font-bold text-2xl flex justify-end w-full max-w-3xl px-4">-- Jan Seipel</h2>
+                    <h2 className="mt-4 drop-shadow-lg text-gray-200 text-xl flex justify-end w-full max-w-3xl px-4">-- Jan Seipel</h2>
                 </div>
             </section>
 
             <section className="pt-16 px-4">
                 <div className="flex flex-col md:flex-row justify-center items-center max-w-4xl mx-auto">
-                    <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8 border-teal-500 border-5 p-1 inset-shadow-xl" />
+                    <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-10 md:mb-0 md:mr-8 border-teal-500 border-5 p-1 inset-shadow-xl" />
                     <div className="text-left">
-                        <h2 className="text-3xl font-semibold mb-4 text-primary">That's me</h2>
-                        <p className="text-lg text-paragraph">
+                        <h2 className="text-xl tracking-tight font-bold mb-3 text-gray-800">That's me</h2>
+                        <div className="text-base/7 text-gray-500 tracking-wide">
                             I'm Jan, a father of two and - thanks to technology-driven jobs and
                             limited developer capacities - a self-proclaimed "developer by accident."
                             A huge part of my daily work now consists of Python and JavaScript coding,
                             data analysis, APIs, and Git repositories. Check out my private coding
                             projects to get an overview of my skills. Feedback is very much appreciated.
-                        </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -41,7 +41,7 @@ function LandingPage() {
                 <ContactSection></ContactSection>
             </div>
 
-            <section className="bg-gray-100 py-16 px-4">
+            <section className="bg-gray-200 py-16 px-4">
                 <HeadlineSecondary text="My Projekts" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
@@ -83,7 +83,7 @@ function LandingPage() {
 
 const HeadlineSecondary = ({ text }) => {
     return (
-        <h2 className="text-3xl font-bold mb-8 text-dark">{text}</h2>
+        <h2 className="text-xl font-bold tracking-tight mb-8 text-gray-600">{text}</h2>
     )
 }
 

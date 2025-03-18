@@ -14,18 +14,17 @@ const ContactSection = ({vertical=false}) => {
     const orientation = vertical ?
          "flex flex-col bg-black py-2 px-3 rounded-full justify-center space-y-3"
          :
-         "flex py-2 px-3 justify-center space-x-3"
+         "flex py-2 pl-2 justify-center space-x-2"
         //  "flex bg-teal-700 border-paragraph border-2 border-teal-700 py-2 px-3 rounded-full justify-center space-x-3"
         //  "flex bg-black py-2 px-3 rounded-full justify-center space-x-3"
 
     const contactArrow = "->"
 
     return (
-        <div className="flex">
+        <div className="flex pt-3">
             <div className="inline-flex flex-row items-center ml-auto">
                 <div className={vertical ? "flex hidden" : "flex"}>
-                    <h2 className="flex flex-row items-center font-caveat text-xl text-center font-bold mb-1 mr-2 -rotate-3 leading-none space-x-2" ><div>contact<br/>me</div><div className="">{contactArrow}</div></h2>
-                    {/* <h2 className="font-caveat text-dark text-xl text-center font-bold mt-2 mb-2 mr-3 -rotate-3" style={{"font-family": "Caveat"}}>contact me <span className="">{contactArrow}</span></h2> */}
+                    <h2 className="flex flex-row items-center font-caveat text-md text-center font-bold mb-1 mr-2 -rotate-3 leading-none space-x-0" ><div>contact<br/>me</div><div className="">{contactArrow}</div></h2>
                 </div>
                 <div className={orientation}>
                     {contactMethods.map((method) => (
@@ -34,7 +33,7 @@ const ContactSection = ({vertical=false}) => {
                             href={method.href}
                             aria-label={method.label}
                             title={method.name}
-                            className="text-xl text-teal-600 hover:scale-115 transition-transform duration-300 bg-white p-3 rounded-full border-3 border-teal-500 shadow-md"
+                            className="text-md text-teal-600 hover:scale-115 transition-transform duration-300 bg-teal-100 p-2 rounded-full border-0 border-teal-500 shadow-sm"
                         >
                             <Icon name={method.name} />
 
