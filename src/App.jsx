@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter  as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
 import ProjectPage from './ProjectPage';
 import { projects } from './data/projects';
@@ -14,7 +14,7 @@ function NotFound() {
 
 function App() {
   return (
-    <Router basename="/showcase-page">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
