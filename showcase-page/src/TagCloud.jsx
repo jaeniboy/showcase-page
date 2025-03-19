@@ -28,7 +28,7 @@ const TagCloud = ({ data }) => {
     return (
         <div className="flex flex-wrap items-center justify-center md:w-3/4 lg:w-2/3 mx-auto">
             {Object.entries(tagData).map(([text, count]) => (
-                <Tag text={text} size={getTagSize(count)}></Tag>
+                <Tag key={text} text={text} size={getTagSize(count)}></Tag>
             ))}
         </div>
     )

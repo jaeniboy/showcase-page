@@ -22,7 +22,7 @@ function LandingPage() {
                 </div>
             </section>
 
-            <section className="pt-16 px-4">
+            <section className="pt-16 px-4 min-h-[80vh] flex">
                 <div className="flex flex-col md:flex-row justify-center items-center max-w-4xl mx-auto">
                     <img src="https://picsum.photos/200" alt="Your Name" className="w-48 h-48 rounded-full mb-10 md:mb-0 md:mr-8 border-teal-500 border-5 p-1 inset-shadow-xl" />
                     <div className="text-left">
@@ -37,13 +37,13 @@ function LandingPage() {
                     </div>
                 </div>
             </section>
-            <div className="sticky top-[0px] my-10 transform -translate-x-4 z-20">
+            <div className="sticky top-[0px] mb-10 transform -translate-x-4 z-20">
                 <ContactSection></ContactSection>
             </div>
 
-            <section className="bg-gray-200 py-16 px-4">
-                <HeadlineSecondary text="My Projekts" />
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <section className="bg-gray-300 bg-teal-600 py-16 px-4">
+                <HeadlineSecondary text="My Projekts" css="text-teal-50"/>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto sm:px-20 md:px-8">
 
                     {projects.map((project, index) => (
                         <ProjectCard
@@ -59,14 +59,15 @@ function LandingPage() {
                 </div>
             </section>
 
-            <section className="py-16 px-4">
+            <section className="py-16 px-4 min-h-[90vh] flex flex-col justify-center">
                 <HeadlineSecondary text="My Stack" />
                 <TagCloud data={projects}></TagCloud>
-
             </section>
 
-            <section className="bg-gray-100 py-16 px-4">
-                <HeadlineSecondary text="Footer" />
+            <section className="bg-gray-100 py-16 px-4 min-h-[90vh]">
+                <HeadlineSecondary text="My Footer" />
+                <div className="text-gray-600 mt-10">Really don't know what to write here...</div>
+                <div className="text-gray-600 mt-24">© Jan Seipel, 2025</div>
                 {/* <form className="max-w-lg mx-auto flex flex-col">
                     <input type="text" placeholder="Name" required className="mb-4 p-2 border border-gray-300 rounded" />
                     <input type="email" placeholder="E-Mail" required className="mb-4 p-2 border border-gray-300 rounded" />
@@ -81,9 +82,9 @@ function LandingPage() {
 
 }
 
-const HeadlineSecondary = ({ text }) => {
+const HeadlineSecondary = ({ text, css }) => {
     return (
-        <h2 className="text-xl font-bold tracking-tight mb-8 text-gray-600">{text}</h2>
+        <h2 className={`text-xl font-bold tracking-tight mb-8 text-gray-600 ${css}`}>{text}</h2>
     )
 }
 

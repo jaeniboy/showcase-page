@@ -6,7 +6,7 @@ const ContactSection = ({vertical=false}) => {
     const contactMethods = [
         { name: 'github', href: 'https://www.github.com/jaeniboy', label: 'github' },
         { name: 'signal', href: 'https://signal.me/#p/IhreSignalNummer', label: 'Signal' },
-        { name: 'linkedin', href: 'https://www.linkedin.com/in/ihr-profil', label: 'LinkedIn' },
+        { name: 'linkedin', href: 'https://www.linkedin.com/in/jan-seipel-328595108/', label: 'LinkedIn' },
         { name: 'whatsapp', href: 'https://wa.me/ihreWhatsappNummer', label: 'WhatsApp' },
         { name: 'email', href: 'mailto:ihre.email@example.com', label: 'E-Mail' },
     ];
@@ -21,7 +21,7 @@ const ContactSection = ({vertical=false}) => {
     const contactArrow = "->"
 
     return (
-        <div className="flex pt-3">
+        <div className="flex pt-1">
             <div className="inline-flex flex-row items-center ml-auto">
                 <div className={vertical ? "flex hidden" : "flex"}>
                     <h2 className="flex flex-row items-center font-caveat text-md text-center font-bold mb-1 mr-2 -rotate-3 leading-none space-x-0" ><div>contact<br/>me</div><div className="">{contactArrow}</div></h2>
@@ -33,7 +33,7 @@ const ContactSection = ({vertical=false}) => {
                             href={method.href}
                             aria-label={method.label}
                             title={method.name}
-                            className="text-md text-teal-600 hover:scale-115 transition-transform duration-300 bg-teal-100 p-2 rounded-full border-0 border-teal-500 shadow-sm"
+                            className="text-md text-gray-900 hover:scale-115 transition-transform duration-300 bg-gray-200 p-2 rounded-full border-0 border-teal-900 shadow-sm"
                         >
                             <Icon name={method.name} />
 

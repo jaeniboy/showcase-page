@@ -9,8 +9,9 @@ const Button = ({ backgroundColor, fontColor, children, onClick }) => {
         ${fontColor}
         rounded
         border-1
-        border-color-primary
-        hover:bg-primary hover:text-bright
+        border-teal-500
+        text-teal-500
+        hover:border-teal-600 hover:text-teal-600
         focus:outline-none focus:ring-2 focus:ring-opacity-50
         cursor-pointer
       `}
