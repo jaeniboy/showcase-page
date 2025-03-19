@@ -9,7 +9,7 @@ function Home() {
 }
 
 function NotFound() {
-  return <h1>404 - Seite nicht gefunden</h1>;
+  return <h1>404 - Page not found</h1>;
 }
 
 function App() {
