@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Smartphone from "./assets/blank_smartphone_template_small.png"
 import Button from "./Button";
 import ContactSection from "./ContactSection";
@@ -47,13 +47,13 @@ function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
               <TagList tags={tags} />
             </div>
             <div className="mt-1 lg:text-end">
-              <Link to="./">
-                <Button backgroundColor="bg-white" fontColor="text-primary">
+              {/* <Link to="./"> */}
+                <Button backgroundColor="bg-white" fontColor="text-primary" onClick={() => navigate('/')}>
                   <div className="flex items-center">
                     <FaArrowLeft /><span className="ml-2">Back</span>
                   </div>
                 </Button>
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
         </div>
