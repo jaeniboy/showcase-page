@@ -14,7 +14,7 @@ function NotFound() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/showcase-page">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
