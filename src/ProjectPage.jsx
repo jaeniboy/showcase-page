@@ -47,7 +47,7 @@ function ProjectPage({ title, description, image, demoLink, repoLink, tags }) {
               <TagList tags={tags} />
             </div>
             <div className="mt-1 lg:text-end">
-              <Link to="/showcase-page">
+              <Link to="./">
                 <Button backgroundColor="bg-white" fontColor="text-primary">
                   <div className="flex items-center">
                     <FaArrowLeft /><span className="ml-2">Back</span>
